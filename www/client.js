@@ -1,7 +1,7 @@
 console.log("client");
 
 let oReq = new XMLHttpRequest();
-oReq.open("GET", "/data.jpg?cacheKiller=" + Math.random(), true);
+oReq.open("GET", "data.jpg?cacheKiller=" + Math.random(), true);
 oReq.responseType = "arraybuffer";
 let dataSize = 0;
 oReq.onload = function (oEvent) {
@@ -15,7 +15,7 @@ oReq.onload = function (oEvent) {
 };
 
 let sReq = new XMLHttpRequest();
-sReq.open("POST", "/index.html", true);
+sReq.open("POST", "index.html", true);
 sReq.onload = function (oEvent) {
     let endDate = new Date();
     let duration = (endDate.getTime() - startDate.getTime()) / 1000; 
