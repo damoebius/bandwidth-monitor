@@ -15,7 +15,7 @@ oReq.onload = function (oEvent) {
 };
 
 let sReq = new XMLHttpRequest();
-sReq.open("POST", "/api/test/upload", true);
+sReq.open("POST", "/index.html", true);
 sReq.onload = function (oEvent) {
     let endDate = new Date();
     let duration = (endDate.getTime() - startDate.getTime()) / 1000; 
