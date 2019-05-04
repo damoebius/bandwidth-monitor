@@ -1,0 +1,11 @@
+-cp src
+-lib tink_web
+--each
+
+-main front.App
+-js www/js/app.js
+
+--next
+-lib hxnodejs
+-main server.Api
+-js www/api/api.js
