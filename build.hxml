@@ -7,5 +7,7 @@
 
 --next
 -lib hxnodejs
+-lib tink_http_middleware:git:https://github.com/haxetink/tink_http_middleware.git
+-lib asys:git:https://github.com/benmerckx/asys.git
 -main server.Api
 -js www/api/api.js
